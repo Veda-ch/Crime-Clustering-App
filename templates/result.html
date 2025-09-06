@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clustering Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; background-color: #f0f2f5; }
+        img { max-width: 90%; height: auto; border: 1px solid #ccc; border-radius: 8px; margin-top: 20px; }
+        .button {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Clustering Completed</h1>
+    <img src="/{{ plot_file }}" alt="Cluster Plot">
+    <br>
+    <a class="button" href="{{ csv_file }}">Download Clustered CSV</a>
+    <a class="button" href="/">Go Back</a>
+</body>
+</html>
